@@ -1,5 +1,3 @@
-let electionArray = ["mango", "banana", "Na-Vote", "mango"];
-
 function electionResult(votes) {
   let mangoCount = 0;
   let bananaCount = 0;
@@ -10,10 +8,8 @@ function electionResult(votes) {
   for (let vote of votes) {
     if (vote === "mango") {
       mangoCount++;
-      //   console.log(mangoCount);
     } else if (vote === "banana") {
       bananaCount++;
-      //   console.log(bananaCount);
     }
   }
 
@@ -26,5 +22,5 @@ function electionResult(votes) {
   }
 }
 
-const result = electionResult(electionArray);
+const result = electionResult(["mango", "banana", "Na-Vote", "mango"]);
 console.log(result);
